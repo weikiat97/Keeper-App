@@ -4,6 +4,7 @@ import Note from "./Note.jsx";
 import Footer from "./Footer.jsx";
 import CreateArea from "./CreateArea";
 
+
 function App() {
 	const [notes, setNotes] = useState([]);
 
@@ -32,7 +33,7 @@ function App() {
 						id={index}
 						title={noteItem.title}
 						content={noteItem.content}
-						onChecked={deleteNote}
+						onDelete={deleteNote}
 					/>
 				);
 			})}
